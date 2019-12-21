@@ -110,6 +110,40 @@
   git config --globa color.ui auto    #让命令的输出拥有更高的可读性
   ```
 
+- 设置SSH Key
+
+  ```shell
+  $ ssh-keygen -t rsa -C "louislin15@yahoo.com"
+  Generating public/private rsa key pair.
+  Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+  Created directory '/c/Users/Administrator/.ssh'.
+  Enter passphrase (empty for no passphrase):
+  Enter same passphrase again:
+  Your identification has been saved in /c/Users/Administrator/.ssh/id_rsa.
+  Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub.
+  The key fingerprint is:
+  SHA256:iBw10OLmrx0OM47thcLCEv7zmVZY1FfnfeqvUjsT7fI louislin15@yahoo.com
+  The key's randomart image is:
+  +---[RSA 3072]----+
+  |    .oo .   .. . |
+  |    ...o . .  o .|
+  |   ....   .    .o|
+  |   .oo o       ..|
+  |.  oo + S     .. |
+  |oo  .o .     .o .|
+  |ooo =.+      ..+ |
+  |...* O+.    . =..|
+  |  .oO=o      ..*E|
+  +----[SHA256]-----+
+  
+  ```
+
+- 与github进行认证和通信
+
+  ```
+  ssh -T git@github.com
+  ```
+
   
 
 
