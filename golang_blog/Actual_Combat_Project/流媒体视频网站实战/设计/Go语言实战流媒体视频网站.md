@@ -83,17 +83,45 @@
 
 
 
-##### 3-3 API实现之详细设计
+###### 3-3 API实现之详细设计
 
 
 
-- 222
+###### 3-5 API设计：用户资源
 
-- 222
+- List all videos: URL:/user/:username/videos Method:GET, SC:200,400,500---(分页)
 
-- 222
+- Get one video: URL:/user/:username/videos/:vid-id    Method:GET,SC:200,400,500
 
-- 222
+- DELETE one video: URL:/user/:username/videos/:vid-id  Method:DELETE,SC:204,400,401,403,500
+
+  ###### API设计：评论
+
+- Show comments: URL:/videos/:vid-id/comments Method:GET,SC:200,400,500
+
+- Post a comment: URL:/videos/:vid-id/comments Method:Post, SC:201,400,500
+
+- DELETE a comment: URL:/videos/:vid-id/comment/:comment-id  Method:DELETE,SC:204,400,401,403,500
+
+
+
+- 22
+
+- 2
+
+- 2
+
+- 2
+
+- 2
+
+- 2
+
+- 2
+
+- 2
+
+- 2
 
   
 
