@@ -109,6 +109,72 @@ REST风格：资源用url来定位；不同的操作用不同的method来表示�
 
 
 
+###### 3-6 数据库设计： 用户
+
+TABLE:users
+
+id UNSIGNED INT, PRIMARY KEY, AUTO_INCREMENT
+
+login_name VARCHAR(64), UNIQUE KEY
+
+pwd TEXT
+
+
+
+###### 数据库设计： 视频资源
+
+TABLE:video_info
+
+id VARCHAR(64), PRIMARY KEY, NOT NULL
+
+author_id UNSIGNED INT
+
+name TEXT
+
+display_ctime TEXT
+
+create_time DATETIME
+
+
+
+###### 数据库设计： 评论
+
+TABLE: comments
+
+id VARCHAR(64), PRIMARY KEY, NOT NULL
+
+video_id VARCHAR(64)
+
+author_id UNSIGNED INT
+
+content TEXT
+
+time DATATIME
+
+
+
+###### 数据库设计：sessions
+
+TABLE: sessions
+
+session_id TINYTEXT,PRIMARY KEY, NOT NULL
+
+TTL TINYTEXT
+
+login_name VARCHAR(64)
+
+第三范式，每张表都是原子性，不存在冗余字段
+
+
+
+![表设计](表设计.png)
+
+
+
+
+
+- 
+
 - 2
 
 - 2
