@@ -103,9 +103,11 @@
 
 - DELETE a comment: URL:/videos/:vid-id/comment/:comment-id  Method:DELETE,SC:204,400,401,403,500
 
+![api设计-资源定位符分配](api设计-资源定位符分配.jpg)
+
+REST风格：资源用url来定位；不同的操作用不同的method来表示；返回码必须验证遵守http协议
 
 
-- 22
 
 - 2
 
