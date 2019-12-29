@@ -2,3 +2,4 @@
 *.exe
 pkg/
 bin/
+github.com/
