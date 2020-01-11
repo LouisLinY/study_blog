@@ -19,7 +19,7 @@ func main(){
 	fmt.Println(strings.Count("abcddddabceeeeabc", "abc"))
 	fmt.Println(strings.Count("abcddddabceeeeabc", "fhj"))
 
-	
+
 
 
 }
